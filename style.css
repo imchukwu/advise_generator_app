@@ -114,14 +114,10 @@ html {
   display: none;
 }
 
-/* Style for the parent div */
-/* .parent {
-  width: 300px; 
-  height: 300px;
-  border: 1px solid #000;
+.parent {
   display: flex;
   flex-direction: column;
-} */
+}
 
 /* Style for the first child div (20% height) */
 .row1 {
@@ -149,7 +145,14 @@ html {
 }
 
 .cen{
-  display: flex;
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hover-effect:hover {
+  background-color: #53ffaa;
+  box-shadow: 0 0 40px 0 #53ffaa;
+  z-index: 2;
+  border-radius: 9999px;
 }

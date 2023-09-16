@@ -31,14 +31,14 @@ svgElement.addEventListener("click", () => {
 });
 
 
-// Add a mouseover event listener to swap the images
-svgElement.addEventListener("mouseover", () => {
-    alternateImage.classList.remove('hidden');
-    svgElement.classList.add('hidden');
-});
+// // Add a mouseover event listener to swap the images
+// svgElement.addEventListener("mouseover", () => {
+//     alternateImage.classList.remove('hidden');
+//     svgElement.classList.add('hidden');
+// });
 
-// Add a mouseout event listener to revert to the default image
-alternateImage.addEventListener("mouseout", () => {
-    svgElement.classList.remove('hidden');
-    alternateImage.classList.add('hidden');
-});
+// // Add a mouseout event listener to revert to the default image
+// alternateImage.addEventListener("mouseout", () => {
+//     svgElement.classList.remove('hidden');
+//     alternateImage.classList.add('hidden');
+// });
