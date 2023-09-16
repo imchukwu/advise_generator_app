@@ -5,154 +5,111 @@ html {
   padding: 0;
   overflow: hidden;
   background: var(--Dark-Blue, #202733);
-  /* position: relative; */
   justify-content: center;
   align-items: center;
 }
 
-.centered-div {
+.parent-container {
   width: 50%;
-  height: 50%;
+  height: 40%;
   flex-shrink: 0;
   border-radius: 15px;
   background: var(--Dark-Grayish-Blue, #313a48);
   box-shadow: 30px 50px 80px 0px rgba(0, 0, 0, 0.1);
-  position: absolute;
+  position: relative;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  /* min-height: 100vh;  */
-  padding-bottom: 50px; /* Adjust this value to match the height of your SVG */
-  
+  padding-bottom: 50px;
 }
 
-.centered-pheader {
+.advice-container {
+  margin-top: 3%;
+  margin-bottom: 3%;
+  height: 92%;
+  display: block;
+}
+
+.advice-number {
   color: var(--Neon-Green, #53ffaa);
+  height: 20%;
   text-align: center;
-  font-feature-settings: "clig" off, "liga" off;
-
-  /* Heading */
-  font-family: Manrope;
-  font-size: 13px;
-  font-style: normal;
-  font-weight: 800;
   line-height: normal;
-  letter-spacing: 4.086px;
-  margin: 20 auto;
-  justify-content: center;
+  font-size: 28px;
+  font-weight: 800;
 }
 
-.centered-p {
-  width: 70%;
+.advice-message {
+  height: 70%;
   color: var(--Light-Cyan, #cee3e9);
   text-align: center;
   font-feature-settings: "clig" off, "liga" off;
 
-  /* Quote */
   font-family: Manrope;
   font-size: 28px;
   font-style: normal;
   font-weight: 800;
   line-height: normal;
-  letter-spacing: -0.3px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  margin-block: 1rem;
 }
 
-/* .bottom-svg { */
-  /* position: absolute; */
-  /* bottom: 0;
-  left: 50%;
-  transform: translateX(-50%); */
+.advice-line {
+  height: 15%;
 
-/* } */
-
-.bottom-svg, .alternate-svg {
-  top: 0;
-  left: 0;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
+  margin-block: 0.6rem 1rem;
+  position: relative;
+  width: 100%;
 }
 
-.line {
-  width: 40%;
+.advice-line::before,
+.advice-line::after {
+  content: "";
+  width: 43%;
   height: 1px;
-  top: 8px;
   position: absolute;
   background: #4f5d74;
+  top: 8px;
 }
 
-.shortbar {
-  text-align: center;
-}
-
-.shortbar2 {
-  background: #cee3e9;
-  border-radius: 3px;
-}
-
-.container1{
-  position: relative;
-}
-
-.shadow {
-  position: absolute;
-  top: 0;
+.advice-line::before {
   left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #53FFAA; /* Bright green color */
-  opacity: 0; /* Initially hidden */
-  transition: opacity 0.3s ease-in-out; /* Smooth transition */
-  pointer-events: none; /* Allows clicks to pass through to the SVG */
 }
 
-.hidden {
-  display: none;
+.advice-line::after {
+  right: 0;
 }
 
-.parent {
-  display: flex;
-  flex-direction: column;
+.bar {
+  width: 1.25rem;
+  height: 1rem;
+  position: relative;
+  inset-inline: calc(50% - 0.625rem);
 }
 
-/* Style for the first child div (20% height) */
-.row1 {
-  height: 20%;
-}
-
-/* Style for the second child div (70% height) */
-.row2 {
-  height: 70%;
-}
-
-/* Style for the third child div (15% height) */
-.row3 {
+.advice-dice {
   height: 15%;
+  background-color: #909090;
+  margin-top: auto;
+
+  cursor: pointer;
+  width: 4rem;
+  height: 4rem;
+  background-color: var(--Neon-Green);
+  border-radius: 50%;
+  position: absolute;
+  inset-inline: calc(50% - 2rem);
+  bottom: -10%;
+  transition: box-shadow 500ms;
 }
 
-/* Style for the fourth child div (15% height) */
-.row4 {
-  height: 15%;
-  margin-top: auto; /* Push this row to the bottom */
-}
-
-.center-element{
-  align-items: center;
-}
-
-.cen{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.hover-effect:hover {
+.advice-dice:hover {
   background-color: #53ffaa;
   box-shadow: 0 0 40px 0 #53ffaa;
   z-index: 2;
   border-radius: 9999px;
+}
+.center {
+  text-align: center;
+  margin: 20 auto;
+  justify-content: center;
 }
