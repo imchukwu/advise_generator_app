@@ -24,19 +24,20 @@ html {
 }
 
 .advice-container {
-  margin-top: 3%;
-  margin-bottom: 3%;
+  margin-top: 5%;
   height: 92%;
   display: block;
+  margin: 10% 10% 0 10%;
 }
 
 .advice-number {
   color: var(--Neon-Green, #53ffaa);
   height: 20%;
   text-align: center;
-  line-height: normal;
-  font-size: 28px;
+  font-size: 20px;
   font-weight: 800;
+  margin-top: 20px;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
 }
 
 .advice-message {
@@ -45,11 +46,10 @@ html {
   text-align: center;
   font-feature-settings: "clig" off, "liga" off;
 
-  font-family: Manrope;
+  font-family: Manrope, Verdana, Geneva, Tahoma, sans-serif;
   font-size: 28px;
   font-style: normal;
   font-weight: 800;
-  line-height: normal;
   margin-block: 1rem;
 }
 
@@ -102,12 +102,14 @@ html {
   transition: box-shadow 500ms;
 }
 
-.advice-dice:hover {
+.advice-dice:hover,
+.advice-dice:active {
   background-color: #53ffaa;
   box-shadow: 0 0 40px 0 #53ffaa;
   z-index: 2;
   border-radius: 9999px;
 }
+
 .center {
   text-align: center;
   margin: 20 auto;
